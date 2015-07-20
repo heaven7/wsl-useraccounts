@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   api.addFiles('wsl-useraccounts.js');
 
   api.use([
-    'useraccounts:bootstrap',
+    'useraccounts:unstyled@1.8.1',
     'accounts-password'
     ], ['server', 'client'])
 });
