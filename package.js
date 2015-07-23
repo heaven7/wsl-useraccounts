@@ -15,8 +15,7 @@ Package.onUse(function(api) {
 
     api.addFiles([
         'lib/server/config/accountstemplate.js',
-        'lib/schemas.js',
-        'wsl-useraccounts.js'
+        'lib/both/schemas.js'
     ], both);
 
     var packages = [
