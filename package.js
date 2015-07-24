@@ -26,8 +26,11 @@ Package.onUse(function(api) {
     api.imply(packages);
 
     api.addFiles([
-        'lib/server/config/accountstemplate.js',
-        'lib/both/schemas.js'
+        'lib/both/config/accountstemplate.js',
+        'lib/both/schemas.js',
+        'lib/both/users.js'
     ], both);
+
+    api.export('Users');
 
 });
