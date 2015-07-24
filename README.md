@@ -1,1 +1,1 @@
-Auth package with useraccounts
+Users package

@@ -11,12 +11,6 @@ both = ['client','server'];
 
 Package.onUse(function(api) {
     api.versionsFrom('1.1.0.2');
-    api.addFiles('wsl-useraccounts.js');
-
-    api.addFiles([
-        'lib/server/config/accountstemplate.js',
-        'lib/both/schemas.js'
-    ], both);
 
     var packages = [
         'heaven7:wsl-core',
@@ -30,4 +24,10 @@ Package.onUse(function(api) {
 
     api.use(packages, ['server', 'client']);
     api.imply(packages);
+
+    api.addFiles([
+        'lib/server/config/accountstemplate.js',
+        'lib/both/schemas.js'
+    ], both);
+
 });
