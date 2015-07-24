@@ -27,9 +27,15 @@ Package.onUse(function(api) {
 
     api.addFiles([
         'lib/both/config/accountstemplate.js',
+        'lib/both/routes.js',
         'lib/both/schemas.js',
         'lib/both/users.js'
     ], both);
+
+    api.addFiles([
+        'lib/client/templates/account/account.html',
+        'lib/client/templates/dashboard/dashboard.html'
+    ], 'client');
 
     api.export('Users');
 
