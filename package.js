@@ -27,6 +27,7 @@ Package.onUse(function(api) {
 
     api.addFiles([
         'lib/both/config/accountstemplate.js',
+        'lib/both/config/router.js',
         'lib/both/routes.js',
         'lib/both/schemas.js',
         'lib/both/users.js'
@@ -34,7 +35,9 @@ Package.onUse(function(api) {
 
     api.addFiles([
         'lib/client/templates/account.html',
-        'lib/client/templates/profile.html'
+        'lib/client/templates/profile.html',
+        'lib/client/templates/loginRequired.html',
+        'lib/client/templates/logout.html'
     ], 'client');
 
     api.export('Users');
