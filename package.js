@@ -33,8 +33,8 @@ Package.onUse(function(api) {
     ], both);
 
     api.addFiles([
-        'lib/client/templates/account/account.html',
-        'lib/client/templates/dashboard/dashboard.html'
+        'lib/client/templates/account.html',
+        'lib/client/templates/profile.html'
     ], 'client');
 
     api.export('Users');
