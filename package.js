@@ -26,7 +26,7 @@ Package.onUse(function(api) {
     api.imply(packages);
 
     api.addFiles([
-        'lib/both/config/accountstemplate.js',
+        'lib/both/config/accountsTemplate.js',
         'lib/both/config/router.js',
         'lib/both/routes.js',
         'lib/both/schemas.js',
@@ -40,6 +40,11 @@ Package.onUse(function(api) {
         'lib/client/templates/logout.html'
     ], 'client');
 
-    api.export('Users');
+    api.addFiles([
+        'i18n/de.i18n.json',
+        'i18n/en.i18n.json',
+        'i18n/es.i18n.json'
+    ], both);
 
+    api.export('Users');
 });
