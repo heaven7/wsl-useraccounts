@@ -1,7 +1,7 @@
 
 Package.describe({
     name: 'heaven7:wsl-useraccounts',
-    version: '0.0.1',
+    version: '0.0.2',
     summary: 'Auth wrapper package with useraccounts',
     git: 'https://github.com/heaven7/wsl-useraccounts.git',
     documentation: 'README.md'
@@ -10,16 +10,18 @@ Package.describe({
 both = ['client','server'];
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.1.0.2');
+    api.versionsFrom('1.2');
 
     var packages = [
-        'heaven7:wsl-core@0.0.1',
+        'heaven7:wsl-core@0.0.2',
         'accounts-ui',
         'accounts-base',
         'accounts-password',
         'accounts-twitter',
         'accounts-facebook',
-        'useraccounts:unstyled@1.9.1'
+        'useraccounts:core@1.12.4',
+        'useraccounts:unstyled@1.12.4',
+        'softwarerero:accounts-t9n@1.1.4'
     ];
 
     api.use(packages, ['server', 'client']);
