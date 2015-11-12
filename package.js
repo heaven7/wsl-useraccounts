@@ -20,7 +20,7 @@ Package.onUse(function(api) {
         'accounts-twitter',
         'accounts-facebook',
         'useraccounts:core@1.12.4',
-        'useraccounts:unstyled@1.12.4',
+        'useraccounts:semantic-ui@1.12.4',
         'softwarerero:accounts-t9n@1.1.4'
     ];
 
