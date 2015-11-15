@@ -20,6 +20,7 @@ Package.onUse(function(api) {
         'accounts-twitter',
         'accounts-facebook',
         'useraccounts:core@1.12.4',
+        'useraccounts:iron-routing@1.12.4',
         'useraccounts:semantic-ui@1.12.4',
         'softwarerero:accounts-t9n@1.1.4'
     ];
@@ -30,7 +31,9 @@ Package.onUse(function(api) {
     api.addFiles([
         'lib/client/templates/account.html',
         'lib/client/templates/profile.html',
+        'lib/client/templates/login.html',
         'lib/client/templates/loginRequired.html',
+        'lib/client/templates/signup.html',
         'lib/client/templates/logout.html'
     ], 'client');
 
