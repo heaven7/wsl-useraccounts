@@ -3,3 +3,16 @@
 
     {{> atForm state='changePwd'}}
 </template>
+
+<template name="setUsername">
+    <h3>{{_ "account_setup"}}</h3>
+    {{#autoForm collection="Users" doc=user type="update" id="setUserName"}}
+        <fieldset>
+            <legend>{{_ "choose_username"}}</legend>
+            {{> afQuickField name="username"}}
+            <div>
+                <button type="submit" class="btn btn-primary">{{_ "update"}}</button>
+            </div>
+        </fieldset>
+    {{/autoForm}}
+</template>

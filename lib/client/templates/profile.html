@@ -1,3 +1,41 @@
 <template name="profile">
-    [profile]
+    {{> showProfile}}
+</template>
+
+<template name="showProfile">
+    {{#if profile.picture}}
+        {{#with getDoc profile.picture 'ProfilePictures'}}
+            <img src="{{url}}" class="img-thumbnail img-rounded">
+        {{/with}}
+    {{/if}}
+    {{#if $eq username User.username}}
+        <a class="pull-right btn btn-primary" href="{{pathFor 'profile.edit' username=username }}">
+            <i class="fa fa-user"></i><span>&nbsp;{{_ "editProfile"}}</span>
+        </a>
+    {{/if}}
+    <h2>{{profile.firstName}} {{profile.lastName}} <small>{{username}}</small></h2>
+    <em>{{profile.threeWords}}</em>
+    <hr />
+    <h3>{{_ 'trainerValues'}}</h3>
+    <p>{{{profile.values}}}</p>
+    <h3>{{_ 'trainerThreeThings'}}</h3>
+    <p>{{{profile.threeThings}}}</p>
+    <h3>{{_ 'trainerBio'}}</h3>
+    <p>{{{profile.bio}}}</p>
+    <h3>{{_ 'trainerTalents'}}</h3>
+    <p>{{{profile.talents}}}</p>
+
+</template>
+
+<template name="profileEdit">
+    {{> editUserProfileForm}}
+</template>
+
+<template name="editUserProfileForm">
+    {{#autoForm collection="Users" doc=doc meteormethod="updateUserProfile" type="update" id="editUserProfileForm"}}
+        {{> afQuickField name='profile'}}
+
+        <button id="submitUpdate" type="submit">{{_ "update"}}</button>
+        <button id="cancelUpdate" type="submit">{{_ "cancel"}}</button>
+    {{/autoForm}}
 </template>
