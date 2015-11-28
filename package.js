@@ -14,6 +14,7 @@ Package.onUse(function(api) {
 
     var packages = [
         'heaven7:wsl-core@0.0.2',
+        'heaven7:wsl-theme-base@0.0.2',
         'accounts-ui',
         'accounts-base',
         'accounts-password',
