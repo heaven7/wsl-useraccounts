@@ -6,7 +6,7 @@
 
 <template name="setUsername">
     <h3>{{_ "account_setup"}}</h3>
-    {{#autoForm collection="Users" doc=user type="update" id="setUsername"}}
+    {{#autoForm collection="Users" doc=user type="update" id="setUsername" validation="keyup" }}
         <fieldset>
             <legend>{{_ "choose_username"}}</legend>
             {{> afQuickField name="username"}}
