@@ -23,7 +23,7 @@ Package.onUse(function(api) {
         'useraccounts:core@1.12.4',
         'useraccounts:iron-routing@1.12.4',
         'useraccounts:semantic-ui@1.12.4',
-        'softwarerero:accounts-t9n@1.1.4'
+        'softwarerero:accounts-t9n@1.1.6'
     ];
 
     api.use(packages, ['server', 'client']);
