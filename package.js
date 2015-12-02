@@ -15,6 +15,7 @@ Package.onUse(function(api) {
     var packages = [
         'heaven7:wsl-core@0.0.2',
         'heaven7:wsl-theme-base@0.0.2',
+        'heaven7:wsl-files@0.0.1',
         'accounts-ui',
         'accounts-base',
         'accounts-password',
@@ -23,10 +24,11 @@ Package.onUse(function(api) {
         'useraccounts:core@1.12.4',
         'useraccounts:iron-routing@1.12.4',
         'useraccounts:semantic-ui@1.12.4',
-        'softwarerero:accounts-t9n@1.1.6'
+        'softwarerero:accounts-t9n@1.1.6',
+        'utilities:avatar@0.9.2'
     ];
 
-    api.use(packages, ['server', 'client']);
+    api.use(packages, both);
     api.imply(packages);
 
     api.addFiles([
@@ -37,6 +39,8 @@ Package.onUse(function(api) {
         'lib/client/templates/loginRequired.html',
         'lib/client/templates/signup.html',
         'lib/client/templates/logout.html',
+        'lib/client/templates/userListWithRoles.html',
+        'lib/client/templates/userListWithRoles.js',
         'lib/client/templates/hooks.js'
     ], 'client');
 

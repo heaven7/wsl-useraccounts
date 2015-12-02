@@ -1,0 +1,12 @@
+<template name="userListWithRoles">
+    {{#each users}}
+        {{> userWithRole}}
+    {{/each}}
+</template>
+
+<template name="userWithRole">
+    {{username}}
+    {{#with profile}}
+        {{firstName}}
+    {{/with}}
+</template>
