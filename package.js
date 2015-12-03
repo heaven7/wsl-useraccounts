@@ -35,6 +35,7 @@ Package.onUse(function(api) {
         'lib/client/templates/account.html',
         'lib/client/templates/account.js',
         'lib/client/templates/profile.html',
+        'lib/client/templates/profile.js',
         'lib/client/templates/login.html',
         'lib/client/templates/loginRequired.html',
         'lib/client/templates/signup.html',
@@ -54,7 +55,8 @@ Package.onUse(function(api) {
 
     api.addFiles([
         'lib/server/methods.js',
-        'lib/server/allow.js'
+        'lib/server/allow.js',
+        'lib/server/publish.js'
     ], 'server');
     api.export('Users');
 });

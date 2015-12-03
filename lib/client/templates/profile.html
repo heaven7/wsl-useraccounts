@@ -32,9 +32,8 @@
 </template>
 
 <template name="editUserProfileForm">
-    {{#autoForm collection="Users" doc=doc meteormethod="updateUserProfile" type="update" id="editUserProfileForm"}}
+    {{#autoForm collection="Users" doc=currentUser type="update" id="editUserProfileForm"}}
         {{> afQuickField name='profile'}}
-
         <button id="submitUpdate" type="submit">{{_ "update"}}</button>
         <button id="cancelUpdate" type="submit">{{_ "cancel"}}</button>
     {{/autoForm}}
