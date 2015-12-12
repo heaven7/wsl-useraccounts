@@ -16,6 +16,7 @@ Package.onUse(function(api) {
         'heaven7:wsl-core@0.0.2',
         'heaven7:wsl-theme-base@0.0.2',
         'heaven7:wsl-files@0.0.1',
+        'alanning:roles@1.2.14',
         'accounts-ui',
         'accounts-base',
         'accounts-password',

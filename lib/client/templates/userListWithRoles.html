@@ -5,8 +5,12 @@
 </template>
 
 <template name="userWithRole">
-    {{username}}
-    {{#with profile}}
-        {{firstName}}
-    {{/with}}
+        <a class="ui label" href="#">
+            {{#if profile.picture}}
+                {{#with getDoc profile.picture 'Images'}}
+                    {{> image_thumb style="circular" url=url store="thumbs" size="tiny"}}
+                {{/with}}
+            {{/if}}
+            <span>{{username}}</span>
+        </a>
 </template>
