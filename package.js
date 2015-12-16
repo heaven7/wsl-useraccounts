@@ -40,6 +40,7 @@ Package.onUse(function(api) {
         'lib/client/templates/login.html',
         'lib/client/templates/loginRequired.html',
         'lib/client/templates/signup.html',
+        'lib/client/templates/user.html',
         'lib/client/templates/logout.html',
         'lib/client/templates/userListWithRoles.html',
         'lib/client/templates/userListWithRoles.js',
