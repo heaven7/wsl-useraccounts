@@ -7,28 +7,25 @@ Package.describe({
     documentation: 'README.md'
 });
 
-both = ['client','server'];
+var both = ['client','server'],
+    packages = [
+    'heaven7:wsl-core@0.0.2',
+    'heaven7:wsl-theme-base@0.0.2',
+    'heaven7:wsl-files@0.0.1',
+    'accounts-ui',
+    'accounts-base',
+    'accounts-password',
+    'accounts-twitter',
+    'accounts-facebook',
+    'useraccounts:core@1.12.4',
+    'useraccounts:iron-routing@1.12.4',
+    'useraccounts:semantic-ui@1.12.4',
+    'softwarerero:accounts-t9n@1.1.6',
+    'utilities:avatar@0.9.2'
+];
 
 Package.onUse(function(api) {
     api.versionsFrom('1.2');
-
-    var packages = [
-        'heaven7:wsl-core@0.0.2',
-        'heaven7:wsl-theme-base@0.0.2',
-        'heaven7:wsl-files@0.0.1',
-        'alanning:roles@1.2.14',
-        'accounts-ui',
-        'accounts-base',
-        'accounts-password',
-        'accounts-twitter',
-        'accounts-facebook',
-        'useraccounts:core@1.12.4',
-        'useraccounts:iron-routing@1.12.4',
-        'useraccounts:semantic-ui@1.12.4',
-        'softwarerero:accounts-t9n@1.1.6',
-        'utilities:avatar@0.9.2'
-    ];
-
     api.use(packages, both);
     api.imply(packages);
 
