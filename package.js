@@ -1,7 +1,7 @@
 
 Package.describe({
     name: 'heaven7:wsl-useraccounts',
-    version: '0.0.2',
+    version: '0.0.3',
     summary: 'Auth wrapper package with useraccounts',
     git: 'https://github.com/heaven7/wsl-useraccounts.git',
     documentation: 'README.md'
@@ -9,8 +9,8 @@ Package.describe({
 
 var both = ['client','server'],
     packages = [
-    'heaven7:wsl-core@0.0.2',
-    'heaven7:wsl-theme-base@0.0.2',
+    'heaven7:wsl-core@0.0.3',
+    'heaven7:wsl-theme-base@0.0.3',
     'heaven7:wsl-files@0.0.1',
     'accounts-ui',
     'accounts-base',
