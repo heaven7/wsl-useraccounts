@@ -9,9 +9,9 @@ Package.describe({
 
 var both = ['client','server'],
     packages = [
-    'heaven7:wsl-core@0.0.3',
+    'heaven7:wsl-core@0.0.3_1',
     'heaven7:wsl-theme-base@0.0.3',
-    'heaven7:wsl-files@0.0.1',
+    'heaven7:wsl-files@0.0.3',
     'accounts-ui',
     'accounts-base',
     'accounts-password',
@@ -37,10 +37,7 @@ Package.onUse(function(api) {
         'lib/client/templates/login.html',
         'lib/client/templates/loginRequired.html',
         'lib/client/templates/signup.html',
-        'lib/client/templates/user.html',
         'lib/client/templates/logout.html',
-        'lib/client/templates/userListWithRoles.html',
-        'lib/client/templates/userListWithRoles.js',
         'lib/client/templates/hooks.js'
     ], 'client');
 
