@@ -1,7 +1,8 @@
 <template name="account">
-    <h3>{{_ "account_details_heading"}}</h3>
-
+    {{> divider_with_icon icon="browser" text=accountDetailsText}}
     {{> atForm state='changePwd'}}
+    {{> divider_with_icon icon="privacy" text=apiKeyText}}
+    {{> apiKey}}
 </template>
 
 <template name="setUsername">

@@ -10,6 +10,7 @@ Package.describe({
 var both = ['client','server'],
     packages = [
     'heaven7:wsl-core@0.0.3_1',
+    'heaven7:wsl-api@0.0.1',
     'heaven7:wsl-files@0.0.3',
     'heaven7:wsl-alert@0.0.2',
     'accounts-ui',
@@ -21,7 +22,7 @@ var both = ['client','server'],
     'useraccounts:iron-routing@1.12.4',
     'useraccounts:semantic-ui@1.12.4',
     'softwarerero:accounts-t9n@1.1.6',
-    'iron:router'
+    'iron:router@1.0.12'
 ];
 
 Package.onUse(function(api) {
